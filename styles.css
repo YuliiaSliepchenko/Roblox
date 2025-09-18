@@ -355,7 +355,24 @@ body {
     color: #111827;
     margin-bottom: 16px;
 }
-
+.logos {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+}
+.footer-logos {
+    font-size: 20px;
+    color: white;
+    margin: 0;
+    text-decoration: none;
+}
+.header-logos {
+    font-size: 20px;
+    color: white;
+    margin: 0;
+    text-decoration: none;
+}
 .section-header p {
     font-size: 20px;
     color: #6b7280;
