@@ -434,6 +434,7 @@ body {
     font-weight: bold;
     color: #111827;
     margin-bottom: 24px;
+    text-align: -webkit-center;
 }
 
 .benefits-list {
@@ -623,6 +624,7 @@ body {
 .benefit-icon {
     font-size: 48px;
     margin-bottom: 24px;
+    text-align: -webkit-center;
 }
 
 .benefit-card h3 {
@@ -630,11 +632,13 @@ body {
     font-weight: bold;
     color: #111827;
     margin-bottom: 12px;
+    text-align: -webkit-center;
 }
 
 .benefit-card p {
     color: #6b7280;
     line-height: 1.6;
+    text-align: -webkit-center;
 }
 
 .testimonial {
