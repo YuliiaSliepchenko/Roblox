@@ -641,32 +641,73 @@ body {
     text-align: -webkit-center;
 }
 
+.testimonials {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
 .testimonial {
-    background: linear-gradient(to right, #01b7ff, #e3f300);
-    border-radius: 24px;
-    padding: 48px;
-    text-align: center;
-    color: black;
+  background: linear-gradient(to right, #01b7ff, #e3f300);
+  border-radius: 24px;
+  padding: 48px;
+  text-align: center;
+  color: black;
+  display: none;
+  margin-right: 5px;
+  margin-left: 5px;
+  animation: fadeIn 0.8s ease;
+}
+
+.testimonial.active {
+  display: block;
 }
 
 .quote {
-    font-size: 96px;
-    opacity: 0.2;
-    line-height: 1;
-    margin-bottom: 16px;
+  font-size: 96px;
+  opacity: 0.2;
+  line-height: 1;
+  margin-bottom: 16px;
 }
 
 .testimonial blockquote {
-    font-size: 20px;
-    line-height: 1.6;
-    margin-bottom: 24px;
-    font-style: italic;
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  font-style: italic;
 }
 
 .testimonial-author {
-    font-weight: 600;
+  font-weight: 600;
 }
 
+/* Навігаційні точки */
+.dots {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 6px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Анімація плавної появи */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 /* Pricing Section */
 .pricing {
     padding: 80px 0;
